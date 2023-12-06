@@ -80,6 +80,8 @@ const PCardLarge = ({ product }) => {
             </div>
 
             <div style={{ flex: '0', position: 'relative', zIndex: '2', padding: '10px' }}>
+            <Card.Text className='card-brand'>{product.brand}</Card.Text>
+
             <Card.Title style={{ fontSize: '28px' }} className="ellipsis-text">
                 <Link to={`/shop/${product.category}/${product.subcategory}/${product.id}`}
                     style={{textDecoration:'none' , color:'inherit'}}>

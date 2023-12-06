@@ -20,7 +20,7 @@ const PCardTop = ({ product , lgValue  }) => {
         className='PcartTop text-left'
         style={{
           width: '90%',
-          height: '385px',
+          height: '390px',
           textAlign: 'left',
           display: 'flex',
           flexDirection: 'column',
@@ -52,6 +52,8 @@ const PCardTop = ({ product , lgValue  }) => {
         </div>
 
         <Card.Body style={{ flex: '0', position: 'relative', zIndex: '2', padding: '10px' }}>
+        <Card.Text className='card-brand'>{product.brand}</Card.Text>
+
           <Card.Title style={{ fontSize: '15px' }} className="ellipsis-text">
             <Link to={`/shop/${product.category}/${product.subcategory}/${product.id}`}
                 style={{textDecoration:'none' , color:'inherit'}}>

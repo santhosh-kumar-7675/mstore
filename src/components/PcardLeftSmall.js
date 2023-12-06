@@ -20,7 +20,7 @@ const PCardLeftSmall = ({ product }) => {
             className='card-image'
             style={{
               width: '40%', 
-              height: '80px',
+              height: '120px',
               overflow: 'hidden',
               margin: '10% auto',
             }}
@@ -41,6 +41,8 @@ const PCardLeftSmall = ({ product }) => {
             width: '60%', 
           }}
         >
+          <Card.Text className='card-brand'>{product.brand}</Card.Text>
+
           <Card.Title className="ellipsis-text" style={{ fontSize: '15px' ,marginBottom:'1px' }}>
             <Link to={`/shop/${product.category}/${product.subcategory}/${product.id}`}
                 style={{textDecoration:'none' , color:'inherit'}}>

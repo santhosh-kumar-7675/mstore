@@ -72,25 +72,20 @@ const Header = () => {
 
     useEffect(() => {
         const handleDocumentClick = (event) => {
-            // Check if the click is outside the language or currency dropdown
             const isOutsideLanguageDropdown = languageDropdownRef.current && !languageDropdownRef.current.contains(event.target);
             const isOutsideCurrencyDropdown = currencyDropdownRef.current && !currencyDropdownRef.current.contains(event.target);
 
-            // Close the language dropdown if it is open and the click is outside
             if (isOutsideLanguageDropdown) {
                 setShowLanguageDropdown(false);
             }
 
-            // Close the currency dropdown if it is open and the click is outside
             if (isOutsideCurrencyDropdown) {
                 setShowCurrencyDropdown(false);
             }
         };
 
-        // Attach the event listener to the window for mousedown
         window.addEventListener('mousedown', handleDocumentClick);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('mousedown', handleDocumentClick);
         };

@@ -210,7 +210,7 @@ const Home = ({products}) => {
                   <div className='profile-picture'>
                     <img src={profile1} alt="profile pic1" />
                   </div>
-                  <div className='text-content py-2'>
+                  <div className='text-content py-4'>
                     <p>Sony X900F: Impressive 4K HDR Android TV with excellent picture quality, smooth motion handling, and a user-friendly interface. Consider external speakers for better audio. Overall, a solid choice for top-notch visuals and smart features.</p>
                     <h4>Candice Jonathan</h4>
                   </div>

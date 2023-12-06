@@ -11,13 +11,11 @@ const SubscribeForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isValid = emailRegex.test(email);
 
     if (isValid) {
       setIsValidEmail(true);
-      // Add your subscription logic here
       console.log(`Subscribing with email: ${email}`);
       alert('Subscribed!');
     } else {
